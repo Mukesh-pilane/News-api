@@ -1,0 +1,12 @@
+.news__footer{
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-footer);
+}
+
+.news__footer p{
+  color: white;
+}

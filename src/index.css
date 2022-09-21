@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --color-bg: #9CB4CC;
+  --color-footer : #D3CEDF;
+  --color-card: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
