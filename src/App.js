@@ -11,7 +11,7 @@ function App() {
   const [isloading, setLoading] = useState(true);
   
   useEffect(() => {
-    const apikey= process.env.REACT_APP_API_KEY.substring(1, 33)
+    const apikey= process.env.REACT_APP_API_KEY
     const url = `https://newsapi.org/v2/everything?q=${term}&apiKey=${apikey}`;
     const fetchData = async () => {
       try {
@@ -19,6 +19,7 @@ function App() {
         const json = await response.json();
         setArticles(json.articles)
         setLoading(false)
+        console.log(response)
       } catch (error) {
         console.log("error", error);
       }
