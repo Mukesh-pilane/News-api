@@ -12,10 +12,10 @@ const app = express()
 app.use(cors())
 
 //api routes
-app.get("/api/:term", async (req,res)=>{
+app.get("/api", async (req,res)=>{
   
   let json;
-  const term = req.params.term;
+  const term = req.query.term;
   const url = `https://newsapi.org/v2/everything?q=${term}&apiKey=${API_KEY}`;
   
   try {

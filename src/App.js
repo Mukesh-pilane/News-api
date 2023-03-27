@@ -12,7 +12,7 @@ function App() {
   
   useEffect(() => {
     const BASE_URL= process.env.REACT_APP_BASE_URL
-    const url = `${BASE_URL}/api/${term}`;
+    const url = `${BASE_URL}/api?term=${term}`;
     const fetchData = async () => {
       try {
         const response = await fetch(url);
