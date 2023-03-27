@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const fetch = require("node-fetch")
 require('dotenv').config();
 
 //environment variables
@@ -25,7 +26,7 @@ app.get("/api", async (req,res)=>{
       } catch (error) {
         console.log("error", error);
       }
-  res.send({data:json})
+  res.send(json)
 })
 
 app.listen(PORT, (err)=>{
