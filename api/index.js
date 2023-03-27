@@ -25,7 +25,7 @@ app.get("/api", async (req,res)=>{
       } catch (error) {
         console.log("error", error);
       }
-  res.send(json)
+  res.send({data:json})
 })
 
 app.listen(PORT, (err)=>{
