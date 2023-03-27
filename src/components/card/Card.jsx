@@ -2,7 +2,7 @@ import './card.css';
 
 
 const Card = ({article}) => {
-  const {urlToImage, author, description, title, content, publishedAt, url} = article;
+  const {urlToImage, title, content, publishedAt, url} = article;
   return (
   <div className="news__card">
      <div className="news__card-img">

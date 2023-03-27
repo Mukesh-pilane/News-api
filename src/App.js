@@ -11,8 +11,8 @@ function App() {
   const [isloading, setLoading] = useState(true);
   
   useEffect(() => {
-    const apikey= process.env.REACT_APP_API_KEY
-    const url = `https://newsapi.org/v2/everything?q=${term}&apiKey=${apikey}`;
+    const BASE_URL= process.env.REACT_APP_BASE_URL
+    const url = `${BASE_URL}/api/${term}`;
     const fetchData = async () => {
       try {
         const response = await fetch(url);
